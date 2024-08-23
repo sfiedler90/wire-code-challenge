@@ -1,0 +1,9 @@
+.layout {
+  padding-bottom: 250px;
+  position: relative;
+  min-height: 100vh;
+}
+
+.layout .content {
+  padding: 20px 0;
+}

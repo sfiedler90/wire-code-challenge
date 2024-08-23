@@ -1,0 +1,15 @@
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner img {
+  width: 100px;
+  animation: spinner infinite 20s linear;
+}
+
+.spinner p {
+  font-size: 20px;
+  font-weight: bold;
+}
