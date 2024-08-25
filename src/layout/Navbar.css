@@ -6,38 +6,39 @@
 
 .navbar ul li {
   display: flex;
-  align-items: center;
   margin-bottom: 10px;
 }
 
 .navbar ul li a {
   color: #868686;
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 6px 0 6px 20px;
   width: 100%;
   font-weight: bold;
   text-decoration: none;
 }
 
-.navbar ul li::before {
+.navbar ul li a::before {
   float: left;
   content: "";
   display: block;
   width: 40px;
   height: 20px;
+  margin-right: 10px;
   background: #e3e3e3;
   border-radius: 50px;
 }
 
-.navbar ul li.active a {
+.navbar ul li a.active {
   color: orange;
 }
 
-.navbar ul li.active::before {
+.navbar ul li a.active::before {
   background: orange;
 }
 
-.navbar ul li:hover::before {
+.navbar ul li:hover a::before {
   background: #be7f0a;
 }
 

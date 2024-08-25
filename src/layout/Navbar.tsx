@@ -1,19 +1,19 @@
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import React from "react";
 
 export const Navbar: React.FC = () => {
   return (
     <nav className="navbar">
       <ul>
-        <li className="active">
-          <Link to="/">Search Package</Link>
+        <li>
+          <NavLink to="/">Search Package</NavLink>
         </li>
         <li>
-          <Link to="/create">Creating Packages</Link>
+          <NavLink to="/create">Creating Packages</NavLink>
         </li>
         <li>
-          <Link to="/api">Api</Link>
+          <NavLink to="/api">Api</NavLink>
         </li>
       </ul>
     </nav>
